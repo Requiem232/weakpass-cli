@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ibnaleem/weakpass-cli/issues"
   },
-  "homepage": "https://github.com/ibnaleem/weakpass-cli#readme"
+  "homepage": "https://github.com/ibnaleem/weakpass-cli#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
 }

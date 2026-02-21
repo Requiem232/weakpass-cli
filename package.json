@@ -1,0 +1,21 @@
+{
+  "name": "weakpass-cli",
+  "version": "1.0.0",
+  "description": "🎨 Interact with Weakpass.com's API through the terminal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibnaleem/weakpass-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ibnaleem/weakpass-cli/issues"
+  },
+  "homepage": "https://github.com/ibnaleem/weakpass-cli#readme"
+}

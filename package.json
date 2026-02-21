@@ -20,5 +20,8 @@
   "homepage": "https://github.com/ibnaleem/weakpass-cli#readme",
   "devDependencies": {
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "commander": "^14.0.3"
   }
 }

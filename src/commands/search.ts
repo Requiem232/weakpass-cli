@@ -1,4 +1,5 @@
 import axios from 'axios';
+import chalk from 'chalk';
 import { Command } from 'commander';
 
 function validHash(hash: string): boolean {
@@ -20,10 +21,10 @@ export function loadCommands(program: Command) {
     .description('Search NTLM, MD5, SHA1, SHA256 and SHA512 hashes on Weakpass.com')
     .action((hash: string) => {
         if (!validHash(hash)) {
-            console.error("Invalid hash format.\nAllowed hashes: NTLM, MD5, SHA1, SHA256 and SHA512");
+            console.error(chalk.red(`Invalid hash format for ${hash} of length ${hash.length}.\nAllowed hashes: NTLM, MD5, SHA1, SHA256 and SHA512`));
             return;
         }
-        console.log(`Searching for hash: ${hash}...`);
+        console.log(chalk.yellow(`Searching for hash: ${hash}...`));
 
         const url = `https://weakpass.com/api/v1/search/${hash}.json`;
 
@@ -36,7 +37,7 @@ export function loadCommands(program: Command) {
                 console.log(response.data);
             })
             .catch(error => {
-                console.error(error);
+                console.error(chalk.red(error));
             });
     });
 }

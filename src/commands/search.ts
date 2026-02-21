@@ -24,7 +24,7 @@ export function searchCommand(program: Command) {
             console.error(chalk.red(`Invalid hash format for ${hash} of length ${hash.length}.\nAllowed hashes: NTLM, MD5, SHA1, SHA256 and SHA512`));
             return;
         }
-        console.log(chalk.yellow(`Searching for hash: ${hash}...`));
+        console.log(chalk.yellow(`[*] Searching for hash: ${hash}...`));
 
         const url = `https://weakpass.com/api/v1/search/${hash}.json`;
 

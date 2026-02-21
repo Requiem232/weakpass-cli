@@ -29,7 +29,7 @@ export function rangeCommand(program: Command) {
             return;
         }    
 
-        console.log(chalk.yellow(`Searching for hash range ${hash} with hash type ${hash_type}...`));
+        console.log(chalk.yellow(`[*] Searching for hash range ${hash} with hash type ${hash_type}...`));
 
         const url = `https://weakpass.com/api/v1/range/${hash}.txt?type=${hash_type}`;
 
@@ -43,19 +43,19 @@ export function rangeCommand(program: Command) {
                 const numberOfHashes = hashes.length;
                 const top10Hashes = response.data.split('\n').slice(0, 10);
 
-                console.log(chalk.green(`Found ${numberOfHashes} hash-plain pairs!`))
-                console.log(chalk.green('Top 10 hash-plain pairs:'))
+                console.log(chalk.green(`[+] Found ${numberOfHashes} hash-plain pairs!`))
+                console.log(chalk.green('[+] Top 10 hash-plain pairs:'))
                 top10Hashes.forEach((hash: string, index: number) => {
-                    console.log(chalk.blue(`${index + 1}: ${hash}`));
+                    console.log(chalk.blue(` ↳ [+] ${index + 1}: ${hash}`));
                   });
 
-                console.log(chalk.yellow(`Writing all ${numberOfHashes} to ${hash}.txt...`))
+                console.log(chalk.yellow(`[*] Writing all ${numberOfHashes} to ${hash}.txt...`))
 
                 fs.writeFile(`${hash}.txt`, hashes.join('\n'), (err) => {
                     if (err) {
                       console.error(chalk.red('Error writing file:', err));
                     } else {
-                      console.log(chalk.green(`All hashes written to ${hash}.txt!`));
+                      console.log(chalk.green(`[*] All hashes written to ${hash}.txt!`));
                     }
                   });
             })

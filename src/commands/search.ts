@@ -16,7 +16,7 @@ function validHash(hash: string): boolean {
     return patterns.md5.test(hash) || patterns.sha1.test(hash) || patterns.sha256.test(hash) || patterns.sha512.test(hash);
 }
 
-export function loadCommands(program: Command) {
+export function searchCommand(program: Command) {
     program.command('search <hash>')
     .description('Search NTLM, MD5, SHA1, SHA256 and SHA512 hashes on Weakpass.com')
     .action((hash: string) => {

